@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primary: #000000;
+    --color-secondary: #F6F6F6;
+    --color-third: #22D4FD;
+
+    --color-hover: #272727;
+
+    --font-title: "Krona One", sans-serif;
+    --font-paragraph: "Montserrat", sans-serif;
+
+    --font-size-title: 2.25rem;
+    --font-size-paragraph: 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-family: var(--font-paragraph);
+    font-size: var(--font-size-paragraph);
+    font-weight: 600;
+    color: var(--color-third);
+    text-decoration: none;
+}
+
+.title-strong{
+    color: var(--color-third);
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    padding:6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.presentation__content__title{
+    font-family: var(--font-title);
+    font-size: var(--font-size-title);
+}
+
+.presentation__content__text{
+    font-family: var(--font-paragraph);
+    font-size: var(--font-size-paragraph);
+}
+
+.presentation__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+}
+
+.presentation__links_subtitle{
+    font-family: var(--font-title);
+    font-size: var(--font-size-paragraph);
+    font-weight: 400;
+}
+
+.presentation__links__button{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--font-paragraph);
+    font-size: var(--font-size-paragraph);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-third);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentation__links__button:hover{
+    background-color: var(--color-hover);
+}
+
+.presentation__image{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-third);
+    padding: var(--font-size-paragraph);
+    color: var(--color-primary);
+    text-align: center;
+    font-family: var(--font-paragraph);
+    font-size: var(--font-size-paragraph);
+}
+
+@media (max-width: 1200px) {
+    
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        justify-content: center;
+    }
+
+    .presentation{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content{
+        width: auto;
+    }
+}
